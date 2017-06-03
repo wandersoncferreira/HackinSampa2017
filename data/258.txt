@@ -1,0 +1,1 @@
+{"response": {"id": "2017/05/17/345", "data": "2017-05-17T00:00:00Z", "retranca": "egifadm", "tipo_conteudo": "LICITA\u00c7\u00d5ES", "secretaria": "EDUCA\u00c7\u00c3O", "orgao": "DIRETORIA REGIONAL DE EDUCA\u00c7\u00c3O DE SANTO AMARO", "texto": "Processo 2017-0.008.487-5\nTORNANDO SEM EFEITO / INSUBSISTENTE A PUBLICA\u00c7\u00c3O NO DOC DE 07/02/2017, P\u00c1G 18. \n\n"}}
