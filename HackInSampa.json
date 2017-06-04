@@ -38,7 +38,9 @@
       "proporcao_secretaria" : 0.35647909999999994,
       "score" : "BAIXO",
       "titulo" : "AUTORIZO",
-      "valor" : 35647.909999999996
+      "valor" : 35647.909999999996,
+      "tipo": "AQUISICAO"
+
     }
   },
   "negocios" : {
@@ -65,7 +67,29 @@
       "proporcao_secretaria" : 5.696716800000001,
       "score" : "ALTO",
       "titulo" : "AUTORIZO",
-      "valor" : 56967.168000000005
+      "valor" : 56967.168000000005,
+      "tipo": "SERVICO"
     }
+  },
+  "educacao": {
+    "01" : {
+    "data": "2009-11-17",
+    "detalhes": [{"data": "2014-5-22", "valor": 2897.8099999999999},
+      {"data": "2014-5-30", "valor": 1240.0},
+      {"data": "2015-6-4", "valor": 12430.0},
+      {"data": "2015-7-7", "valor": 68675.100000000006},
+      {"data": "2016-5-18", "valor": 568.79999999999995},
+      {"data": "2016-5-21", "valor": 7890.0},
+      {"data": "2016-6-26", "valor": 14970.0},
+      {"data": "2016-8-11", "valor": 21596.599999999999},
+      {"data": "2016-8-17", "valor": 3746.5},
+      {"data": "2016-8-19", "valor": 20623.849999999999}],
+    "link_do": "http://devcolab.each.usp.br/do/2016/08/11/397",
+    "orgao": "DIRETORIA REGIONAL DE EDUCAÇÃO DE JAÇANÃ",
+    "proporcao_secretaria": 1.5013462135922331,
+    "score": "MEDIO",
+    "tipo": "SERVICO",
+    "titulo": "AUTORIZO",
+    "valor": 15463.866}
   }
 }

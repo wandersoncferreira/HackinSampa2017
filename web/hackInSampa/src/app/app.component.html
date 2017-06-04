@@ -1,0 +1,84 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper" style="background-color:#3094D1">
+      <a href="#!" class="brand-logo">
+        <img class="materialboxed" width="100" src="../assets/logo.png">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <!--<li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>-->
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="row">
+
+  <div class="col s12">
+    
+  <div class="input-field col s12 row">
+    <select (change)="selecionarSecretaria()" [(ngModel)]="selectedOption" name="selectedOption" materialize="material_select" [materializeSelectOptions]="selectOptions" [attr.disabled]="isDisabled?true:null">
+      <option value="" disabled selected>Selecione uma secretaria</option>
+      <option *ngFor="let option of selectOptions" [value]="option.value">{{option.name}}</option>
+    </select>
+    <label>Secretarias</label>
+  </div>
+    <div *ngIf="dados" class="row col s12">
+      <p>
+        <input [checked]="aquisicaoFiltro" (change)="aquisicaoFiltro = !aquisicaoFiltro" type="checkbox" id="aquisicao" />
+        <label for="aquisicao">Aquisição</label>
+        <input [checked]="servicoFiltro" (change)="servicoFiltro = !servicoFiltro" type="checkbox" id="servico" />
+        <label for="servico">Serviço</label>
+      </p>
+      <table>
+        <thead>
+          <tr>
+              <th>Data</th>
+              <th>Titulo</th>
+              <th>Orgão</th>
+              <th>Valor Aproximado</th>
+              <th>Prop. Gastos Secretaria</th>
+              <th>Score</th>
+              <th>D.O. Licitação</th>
+              <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of listarDadosFor() | orderBy : ['-valor']" >
+            <td>{{item.data}}</td>
+            <td>{{item.titulo}}</td>
+            <td>{{item.orgao}}</td>
+            <td>{{item.valor | currency:'brl':true}}</td>
+            <td>{{item.proporcao_secretaria | number: '1.1-2'}}%</td>
+            <td>
+              <i 
+                  class="material-icons"
+                  [ngClass]="{'alto': item.score === 'ALTO', 'medio': item.score === 'MEDIO', 'baixo': item.score === 'BAIXO'}" 
+              >
+                  grade
+              </i>
+            </td>
+            <td><a [attr.href]="item.link_do" target="_blank" >Link</a> </td>
+            <td><i (click)="openModal(item)" style="cursor:pointer" class="material-icons">open_in_browser</i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal1" class="modal modal-fixed-footer" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
+    <div class="modal-content">
+      <h5>Gasto médio</h5>
+      <!--<select (change)="selecionarTipoGrafico(selectedOptionTypeCharts)" [(ngModel)]="selectedOptionTypeCharts" name="selectedOptionTypeCharts" materialize="material_select" [materializeSelectOptions]="selectOptionsTypeCharts" [attr.disabled]="isDisabled?true:null">
+        <option value="" disabled selected>Selecione uma visão</option>
+        <option *ngFor="let option of selectOptionsTypeCharts" [value]="option.value">{{option.name}}</option>
+      </select>-->
+      <p>          
+        <app-grafico *ngIf="series" (onChange)="series" [series]="series" [opcoes]="optionsChart" ></app-grafico>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+    </div>
+  </div>
+
+</div>

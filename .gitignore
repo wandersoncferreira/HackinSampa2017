@@ -99,3 +99,46 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+--------
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/web/hackInSampa/dist
+/web/hackInSampa/tmp
+
+# dependencies
+/web/hackInSampa/node_modules
+
+# IDEs and editors
+/web/hackInSampa/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/web/hackInSampa/.sass-cache
+/web/hackInSampa/connect.lock
+/web/hackInSampa/coverage/*
+/web/hackInSampa/libpeerconnection.log
+/web/hackInSampanpm-debug.log
+/web/hackInSampatestem.log
+/web/hackInSampa/typings
+
+# e2e
+/web/hackInSampa/e2e/*.js
+/web/hackInSampa/e2e/*.map
+
+#System Files
+.DS_Store
+/web/hackInSampa/Thumbs.db
