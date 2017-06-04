@@ -1,0 +1,71 @@
+{
+  "governo" : {
+    "01" : {
+      "data" : "2009-11-17",
+      "detalhes" : [ {
+        "data" : "2006-4-28",
+        "valor" : 46200.0
+      }, {
+        "data" : "2006-7-28",
+        "valor" : 30460.0
+      }, {
+        "data" : "2007-8-16",
+        "valor" : 7013.5
+      }, {
+        "data" : "2008-9-26",
+        "valor" : 62664.0
+      }, {
+        "data" : "2008-11-29",
+        "valor" : 71956.8
+      }, {
+        "data" : "2009-4-7",
+        "valor" : 26668.0
+      }, {
+        "data" : "2009-6-19",
+        "valor" : 18497.5
+      }, {
+        "data" : "2009-7-30",
+        "valor" : 73216.0
+      }, {
+        "data" : "2009-10-21",
+        "valor" : 6819.0
+      }, {
+        "data" : "2009-11-17",
+        "valor" : 12984.3
+      } ],
+      "link_do" : "http://devcolab.each.usp.br/do/2009/11/17/272",
+      "orgao" : "GABINETE DO SUBPREFEITO",
+      "proporcao_secretaria" : 0.35647909999999994,
+      "score" : "BAIXO",
+      "titulo" : "AUTORIZO",
+      "valor" : 35647.909999999996
+    }
+  },
+  "negocios" : {
+    "01" : {
+      "data" : "2015-10-10",
+      "detalhes" : [ {
+        "data" : "2015-10-29",
+        "valor" : 12408.0
+      }, {
+        "data" : "2016-7-6",
+        "valor" : 131760.0
+      }, {
+        "data" : "2016-7-16",
+        "valor" : 60000.0
+      }, {
+        "data" : "2016-9-14",
+        "valor" : 53364.0
+      }, {
+        "data" : "2016-9-23",
+        "valor" : 27303.84
+      } ],
+      "link_do" : "http://devcolab.each.usp.br/do/2015/10/10/262",
+      "orgao" : "PROCURADORIA GERAL DO MUNICIPIO",
+      "proporcao_secretaria" : 5.696716800000001,
+      "score" : "ALTO",
+      "titulo" : "AUTORIZO",
+      "valor" : 56967.168000000005
+    }
+  }
+}
